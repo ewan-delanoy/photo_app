@@ -8,6 +8,10 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6', '>= 5.1.6.1'
+gem 'devise'
+gem 'twitter-bootstrap-rails'
+gem 'jquery-rails'
+gem 'therubyracer'
 # Use sqlite3 as the database for Active Record (removed by me)
 # gem 'sqlite3'
 # Use Puma as the app server
@@ -53,7 +57,7 @@ end
 
 group :development, :test do
   gem 'pg'
-  # This would be needed in older versions of Rails 
+  # This would be needed in older versions of Rails
   #gem 'rails_12factor'
 end
 
