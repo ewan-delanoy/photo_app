@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-
+ActionMailer::Base.default_url_options = { :host => "localhost:3000" }
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
@@ -9,7 +9,7 @@ Devise.setup do |config|
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
   # config.secret_key = '7d0157cbd743b7f1446c46712730e93446f51c8f0da6b4c2887bdc1440e1a278d094197af37a59a48cf710cc1c8cd0e2cf0e297e36834d46b9e130f4e845c448'
-  
+
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
@@ -19,6 +19,7 @@ Devise.setup do |config|
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
   config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
