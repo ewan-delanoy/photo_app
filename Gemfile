@@ -10,6 +10,7 @@ end
 gem 'rails', '~> 5.1.6', '>= 5.1.6.1'
 gem 'devise'
 gem 'twitter-bootstrap-rails'
+gem 'devise-bootstrap-views'
 gem 'jquery-rails'
 gem 'therubyracer'
 # Use sqlite3 as the database for Active Record (removed by me)
